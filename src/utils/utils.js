@@ -9,6 +9,7 @@ import { lodashOperators } from './jsonlogic/operators';
 import NativePromise from 'native-promise-only';
 import { getValue } from './formUtils';
 import stringHash from 'string-hash';
+
 const { fetch } = fetchPonyfill({
   Promise: NativePromise
 });
@@ -182,7 +183,7 @@ export function isMongoId(text) {
  *   The component to check for the calculated value.
  * @param {Object} submission
  *   A submission object.
- * @param data
+ * @param rowData
  *   The full submission data.
  */
 export function checkCalculated(component, submission, rowData) {
@@ -201,7 +202,7 @@ export function checkCalculated(component, submission, rowData) {
 /**
  * Check if a simple conditional evaluates to true.
  *
- * @param condition
+ * @param component
  * @param condition
  * @param row
  * @param data
@@ -242,6 +243,10 @@ export function checkSimpleConditional(component, condition, row, data) {
  * @param custom
  * @param row
  * @param data
+ * @param form
+ * @param variable
+ * @param onError
+ * @param instance
  * @returns {*}
  */
 export function checkCustomConditional(component, custom, row, data, form, variable, onError, instance) {
@@ -281,6 +286,9 @@ export function checkJsonConditional(component, json, row, data, form, onError) 
  *   The data within a row
  * @param data
  *   The full submission data.
+ * @param form
+ *   The form containing components
+ * @param instance
  *
  * @returns {boolean}
  */
@@ -303,10 +311,12 @@ export function checkCondition(component, row, data, form, instance) {
  * Test a trigger on a component.
  *
  * @param component
- * @param action
- * @param data
+ * @param trigger
  * @param row
- * @returns {mixed}
+ * @param data
+ * @param form
+ * @param instance
+ * @returns {*}
  */
 export function checkTrigger(component, trigger, row, data, form, instance) {
   switch (trigger.type) {
@@ -374,9 +384,9 @@ export function addTemplateHash(template) {
 /**
  * Interpolate a string and add data replacements.
  *
- * @param string
+ * @param rawTemplate
  * @param data
- * @returns {XML|string|*|void}
+ * @returns {object|string|*|void}
  */
 export function interpolate(rawTemplate, data) {
   const template = (_.isNumber(rawTemplate) && templateHashCache.hasOwnProperty(rawTemplate))
@@ -418,8 +428,7 @@ export function uniqueName(name, template, evalContext) {
     guid: guid()
   });
   //only letters, numbers, dots, dashes, underscores and spaces are allowed. Anything else will be replaced with dash
-  const uniqueName = `${interpolate(template, evalContext)}${extension}`.replace(/[^0-9a-zA-Z.\-_ ]/g, '-');
-  return uniqueName;
+  return `${interpolate(template, evalContext)}${extension}`.replace(/[^0-9a-zA-Z.\-_ ]/g, '-');
 }
 
 export function guid() {
@@ -538,10 +547,7 @@ export function zonesLoaded() {
  * @return {boolean}
  */
 export function shouldLoadZones(timezone) {
-  if (timezone === currentTimezone() || timezone === 'UTC') {
-    return false;
-  }
-  return true;
+  return !(timezone === currentTimezone() || timezone === 'UTC');
 }
 
 /**
@@ -898,6 +904,7 @@ export function fieldData(data, component) {
  *
  * @param fn Function to delay
  * @param delay Delay time
+ * @param args
  * @return {*}
  */
 export function delay(fn, delay = 0, ...args) {

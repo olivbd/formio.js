@@ -288,6 +288,22 @@ export function findComponent(components, key, path, fn) {
       });
     }
 
+    if (component.hasOwnProperty('tabs') && Array.isArray(component.tabs)) {
+      newPath.push('tabs');
+      component.tabs.forEach(function(tab, index) {
+        var colPath = newPath.slice();
+        colPath.push(index);
+        tab.type = 'tab';
+        if (checkComponent(tab, key, colPath)) {
+          found = true;
+          fn(tab, colPath);
+        }
+        else if (findComponent(tab.components, key, colPath.concat(['components']), fn)) {
+          found = true;
+        }
+      });
+    }
+
     if (
       component.hasOwnProperty('components') && Array.isArray(component.components) &&
       findComponent(component.components, key, newPath.concat(['components']), fn)
