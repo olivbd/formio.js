@@ -26,6 +26,7 @@ export function isLayoutComponent(component) {
   return Boolean(
     (component.columns && Array.isArray(component.columns)) ||
     (component.rows && Array.isArray(component.rows)) ||
+    (component.tabs && Array.isArray(component.tabs)) ||
     (component.components && Array.isArray(component.components))
   );
 }
@@ -53,6 +54,7 @@ export function eachComponent(components, fn, includeAll, path, parent) {
     }
     const hasColumns = component.columns && Array.isArray(component.columns);
     const hasRows = component.rows && Array.isArray(component.rows);
+    const hasTabs = component.tabs && Array.isArray(component.tabs);
     const hasComps = component.components && Array.isArray(component.components);
     let noRecurse = false;
     const newPath = component.key ? (path ? (`${path}.${component.key}`) : component.key) : '';
@@ -65,9 +67,10 @@ export function eachComponent(components, fn, includeAll, path, parent) {
       delete component.parent.componentMap;
       delete component.parent.columns;
       delete component.parent.rows;
+      delete component.parent.tabs;
     }
 
-    if (includeAll || component.tree || (!hasColumns && !hasRows && !hasComps)) {
+    if (includeAll || component.tree || (!hasColumns && !hasRows && !hasTabs && !hasComps)) {
       noRecurse = fn(component, newPath);
     }
 
@@ -95,6 +98,11 @@ export function eachComponent(components, fn, includeAll, path, parent) {
       if (hasColumns) {
         component.columns.forEach((column) =>
           eachComponent(column.components, fn, includeAll, subPath(), parent ? component : null));
+      }
+
+      else if (hasTabs) {
+        component.tabs.forEach((tab) =>
+          eachComponent(tab.components, fn, includeAll, subPath(), parent ? component : null));
       }
 
       else if (hasRows) {
