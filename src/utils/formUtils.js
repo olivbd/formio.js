@@ -25,6 +25,7 @@ export function isLayoutComponent(component) {
   return Boolean(
     (component.columns && Array.isArray(component.columns)) ||
     (component.rows && Array.isArray(component.rows)) ||
+    (component.tabs && Array.isArray(component.tabs)) ||
     (component.components && Array.isArray(component.components))
   );
 }
@@ -52,6 +53,7 @@ export function eachComponent(components, fn, includeAll, path, parent) {
     }
     const hasColumns = component.columns && Array.isArray(component.columns);
     const hasRows = component.rows && Array.isArray(component.rows);
+    const hasTabs = component.tabs && Array.isArray(component.tabs);
     const hasComps = component.components && Array.isArray(component.components);
     let noRecurse = false;
     const newPath = component.key ? (path ? (`${path}.${component.key}`) : component.key) : '';
@@ -64,9 +66,10 @@ export function eachComponent(components, fn, includeAll, path, parent) {
       delete component.parent.componentMap;
       delete component.parent.columns;
       delete component.parent.rows;
+      delete component.parent.tabs;
     }
 
-    if (includeAll || component.tree || (!hasColumns && !hasRows && !hasComps)) {
+    if (includeAll || component.tree || (!hasColumns && !hasRows && !hasTabs && !hasComps)) {
       noRecurse = fn(component, newPath);
     }
 
@@ -103,6 +106,11 @@ export function eachComponent(components, fn, includeAll, path, parent) {
               eachComponent(column.components, fn, includeAll, subPath(), parent ? component : null));
           }
         });
+      }
+
+      else if (hasTabs) {
+        component.tabs.forEach((tab) =>
+          eachComponent(tab.components, fn, includeAll, subPath(), parent ? component : null));
       }
 
       else if (hasComps) {
@@ -231,6 +239,16 @@ export function findComponent(components, key, path, fn) {
           colPath.push('components');
           findComponent(column.components, key, colPath, fn);
         });
+      });
+    }
+
+    if (component.hasOwnProperty('tabs') && Array.isArray(component.tabs)) {
+      newPath.push('tabs');
+      component.tabs.forEach(function(tab, index) {
+        var colPath = newPath.slice();
+        colPath.push(index);
+        colPath.push('components');
+        findComponent(tab.components, key, colPath, fn);
       });
     }
 
