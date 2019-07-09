@@ -1,10 +1,10 @@
 {
   "name": "formiojs",
   "description": "Common js library for client side interaction with <form.io>",
-  "version": "3.16.5",
+  "version": "3.16.6",
   "main": "dist/formio.min.js",
   "license": "MIT",
-  "homepage": "https://github.com/formio/formio.js",
+  "homepage": "https://github.com/olivbd/formio.js",
   "ignore": [
     "**/.*",
     "node_modules",
