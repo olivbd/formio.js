@@ -304,7 +304,7 @@ export function checkCondition(component, row, data, form, instance) {
   }
 
   // Default to show.
-  return true;
+  return !component.hidden;
 }
 
 /**

@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/formio/formio.js"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/olivbd/formio.js"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -1688,7 +1688,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkCalculated">checkCalculated</a></span></span><span class="code" data-ice="signature">(component: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, submission: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, data: <span>*</span>)</span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkCalculated">checkCalculated</a></span></span><span class="code" data-ice="signature">(component: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, submission: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, rowData: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -1717,7 +1717,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkCondition">checkCondition</a></span></span><span class="code" data-ice="signature">(component: <span>*</span>, row: <span>*</span>, data: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkCondition">checkCondition</a></span></span><span class="code" data-ice="signature">(component: <span>*</span>, row: <span>*</span>, data: <span>*</span>, form: <span>*</span>, instance: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -1746,7 +1746,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkCustomConditional">checkCustomConditional</a></span></span><span class="code" data-ice="signature">(component: <span>*</span>, custom: <span>*</span>, row: <span>*</span>, data: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkCustomConditional">checkCustomConditional</a></span></span><span class="code" data-ice="signature">(component: <span>*</span>, custom: <span>*</span>, row: <span>*</span>, data: <span>*</span>, form: <span>*</span>, variable: <span>*</span>, onError: <span>*</span>, instance: <span>*</span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1803,7 +1803,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkSimpleConditional">checkSimpleConditional</a></span></span><span class="code" data-ice="signature">(condition: <span>*</span>, condition: <span>*</span>, row: <span>*</span>, data: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkSimpleConditional">checkSimpleConditional</a></span></span><span class="code" data-ice="signature">(component: <span>*</span>, condition: <span>*</span>, row: <span>*</span>, data: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -1832,7 +1832,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkTrigger">checkTrigger</a></span></span><span class="code" data-ice="signature">(component: <span>*</span>, action: <span>*</span>, data: <span>*</span>, row: <span>*</span>): <span>mixed</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-checkTrigger">checkTrigger</a></span></span><span class="code" data-ice="signature">(component: <span>*</span>, trigger: <span>*</span>, row: <span>*</span>, data: <span>*</span>, form: <span>*</span>, instance: <span>*</span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1976,7 +1976,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-delay">delay</a></span></span><span class="code" data-ice="signature">(fn: <span>*</span>, delay: <span>*</span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-delay">delay</a></span></span><span class="code" data-ice="signature">(fn: <span>*</span>, delay: <span>*</span>, args: <span>*</span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -2751,7 +2751,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-interpolate">interpolate</a></span></span><span class="code" data-ice="signature">(string: <span>*</span>, data: <span>*</span>): <span>XML</span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span>*</span> | <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-interpolate">interpolate</a></span></span><span class="code" data-ice="signature">(rawTemplate: <span>*</span>, data: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span>*</span> | <span>void</span></span>
         </p>
       </div>
       <div>
@@ -6648,11 +6648,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber368">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber378">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {addTemplateHash} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber368">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {addTemplateHash} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber378">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -6719,11 +6719,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber374">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber398">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {applyFormChanges} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber374">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {applyFormChanges} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber398">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -6922,11 +6922,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber157">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber158">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {boolValue} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber157">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {boolValue} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber158">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Determines the boolean value of a setting.</p>
@@ -6994,11 +6994,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber960">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber967">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {bootstrapVersion} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber960">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {bootstrapVersion} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber967">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Determines the major version number of bootstrap.</p>
@@ -7062,15 +7062,15 @@
     
     
     
-    <span class="code" data-ice="name">checkCalculated</span><span class="code" data-ice="signature">(component: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, submission: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, data: <span>*</span>)</span>
+    <span class="code" data-ice="name">checkCalculated</span><span class="code" data-ice="signature">(component: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, submission: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, rowData: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber188">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber189">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkCalculated} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber188">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkCalculated} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber189">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Checks the calculated value for a provided component and data.</p>
@@ -7101,7 +7101,7 @@
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">data</td>
+      <td data-ice="name" class="code" data-depth="0">rowData</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The full submission data.</p>
@@ -7137,15 +7137,15 @@
     
     
     
-    <span class="code" data-ice="name">checkCondition</span><span class="code" data-ice="signature">(component: <span>*</span>, row: <span>*</span>, data: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span class="code" data-ice="name">checkCondition</span><span class="code" data-ice="signature">(component: <span>*</span>, row: <span>*</span>, data: <span>*</span>, form: <span>*</span>, instance: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber287">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber295">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkCondition} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber287">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkCondition} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber295">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Checks the conditions for a provided component and data.</p>
@@ -7181,6 +7181,19 @@
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>The full submission data.</p>
 </td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">form</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>The form containing components</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">instance</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
     </tr>
 </tbody>
   </table>
@@ -7224,15 +7237,15 @@
     
     
     
-    <span class="code" data-ice="name">checkCustomConditional</span><span class="code" data-ice="signature">(component: <span>*</span>, custom: <span>*</span>, row: <span>*</span>, data: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">checkCustomConditional</span><span class="code" data-ice="signature">(component: <span>*</span>, custom: <span>*</span>, row: <span>*</span>, data: <span>*</span>, form: <span>*</span>, variable: <span>*</span>, onError: <span>*</span>, instance: <span>*</span>): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber247">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber252">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkCustomConditional} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber247">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkCustomConditional} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber252">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Check custom javascript conditional.</p>
@@ -7268,6 +7281,30 @@
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">data</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">form</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">variable</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">onError</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">instance</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -7318,11 +7355,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber260">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber265">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkJsonConditional} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber260">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkJsonConditional} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber265">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -7415,15 +7452,15 @@
     
     
     
-    <span class="code" data-ice="name">checkSimpleConditional</span><span class="code" data-ice="signature">(condition: <span>*</span>, condition: <span>*</span>, row: <span>*</span>, data: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span class="code" data-ice="name">checkSimpleConditional</span><span class="code" data-ice="signature">(component: <span>*</span>, condition: <span>*</span>, row: <span>*</span>, data: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber210">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber211">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkSimpleConditional} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber210">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkSimpleConditional} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber211">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Check if a simple conditional evaluates to true.</p>
@@ -7440,7 +7477,7 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">condition</td>
+      <td data-ice="name" class="code" data-depth="0">component</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -7505,15 +7542,15 @@
     
     
     
-    <span class="code" data-ice="name">checkTrigger</span><span class="code" data-ice="signature">(component: <span>*</span>, action: <span>*</span>, data: <span>*</span>, row: <span>*</span>): <span>mixed</span></span>
+    <span class="code" data-ice="name">checkTrigger</span><span class="code" data-ice="signature">(component: <span>*</span>, trigger: <span>*</span>, row: <span>*</span>, data: <span>*</span>, form: <span>*</span>, instance: <span>*</span>): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber311">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber321">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkTrigger} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber311">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {checkTrigger} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber321">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Test a trigger on a component.</p>
@@ -7536,7 +7573,13 @@
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">action</td>
+      <td data-ice="name" class="code" data-depth="0">trigger</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">row</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -7548,7 +7591,13 @@
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">row</td>
+      <td data-ice="name" class="code" data-depth="0">form</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">instance</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -7563,7 +7612,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>mixed</span></td>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
           
         </tr>
       </tbody>
@@ -7599,11 +7648,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber680">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber686">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertFormatToFlatpickr} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber680">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertFormatToFlatpickr} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber686">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Convert the format from the angular-datepicker module to flatpickr format.</p>
@@ -7671,11 +7720,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber729">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber735">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertFormatToMask} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber729">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertFormatToMask} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber735">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -7742,11 +7791,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber717">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber723">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertFormatToMoment} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber717">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {convertFormatToMoment} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber723">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Convert the format from the angular-datepicker module to moment format.</p>
@@ -7814,11 +7863,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber496">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber505">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {currentTimezone} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber496">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {currentTimezone} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber505">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Get the current timezone string.</p>
@@ -7866,15 +7915,15 @@
     
     
     
-    <span class="code" data-ice="name">delay</span><span class="code" data-ice="signature">(fn: <span>*</span>, delay: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">delay</span><span class="code" data-ice="signature">(fn: <span>*</span>, delay: <span>*</span>, args: <span>*</span>): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber903">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber910">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {delay} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber903">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {delay} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber910">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Delays function execution with possibility to execute function synchronously or cancel it.</p>
@@ -7903,6 +7952,12 @@
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>Delay time</p>
 </td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">args</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
     </tr>
 </tbody>
   </table>
@@ -8021,11 +8076,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber47">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber48">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {eachComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber47">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {eachComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber48">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Iterate through each component within a form.</p>
@@ -8110,11 +8165,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber510">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber534">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {escapeRegExCharacters} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber510">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {escapeRegExCharacters} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber534">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Escapes RegEx characters in provided String value.</p>
@@ -8184,11 +8239,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber46">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber47">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {evaluate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber46">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {evaluate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber47">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Evaluate a method.</p>
@@ -8262,11 +8317,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber853">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber859">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {fieldData} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber853">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {fieldData} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber859">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Fetch the field data provided a component.</p>
@@ -8340,11 +8395,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber232">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber240">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {findComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber232">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {findComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber240">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>This function will find a component in a form and return the component AND THE PATH to the component in the form.</p>
@@ -8431,11 +8486,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber187">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber195">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {findComponents} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber187">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {findComponents} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber195">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Deprecated version of findComponents. Renamed to searchComponents.</p>
@@ -8509,11 +8564,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber435">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber459">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {flattenComponents} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber435">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {flattenComponents} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber459">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Flatten the form components for data manipulation.</p>
@@ -8590,11 +8645,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber482">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber506">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {formatAsCurrency} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber482">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {formatAsCurrency} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber506">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Formats provided value in way how Currency component uses it.</p>
@@ -8664,11 +8719,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber603">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber609">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {formatDate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber603">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {formatDate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber609">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Format a date provided a value, format, and timezone object.</p>
@@ -8748,11 +8803,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber644">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber650">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {formatOffset} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber644">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {formatOffset} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber650">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Pass a format function to format within a timezone.</p>
@@ -8838,11 +8893,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber330">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber354">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {generateFormChange} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber330">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {generateFormChange} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber354">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -8915,11 +8970,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber150">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber158">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber150">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber158">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Get a component by its key</p>
@@ -8996,11 +9051,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber821">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber827">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getCurrencyAffixes} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber821">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getCurrencyAffixes} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber827">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -9067,11 +9122,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber441">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber450">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getDateSetting} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber441">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getDateSetting} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber450">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Return a translated date setting.</p>
@@ -9139,11 +9194,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber141">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber142">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getElementRect} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber141">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getElementRect} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber142">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Get an elements bounding rectagle.</p>
@@ -9211,11 +9266,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber744">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber750">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getInputMask} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber744">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getInputMask} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber750">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Returns an input mask that is compatible with the input mask library.</p>
@@ -9285,11 +9340,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber663">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber669">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getLocaleDateFormatInfo} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber663">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getLocaleDateFormatInfo} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber669">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -9356,11 +9411,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber806">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber812">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getNumberDecimalLimit} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber806">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getNumberDecimalLimit} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber812">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -9427,11 +9482,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber791">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber797">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getNumberSeparators} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber791">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getNumberSeparators} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber797">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -9499,11 +9554,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber129">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber130">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getPropertyValue} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber129">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getPropertyValue} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber130">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Get a property value of an element.</p>
@@ -9577,11 +9632,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber118">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber119">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getRandomComponentId} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber118">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getRandomComponentId} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber119">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -9632,11 +9687,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber553">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber577">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getStrings} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber553">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getStrings} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber577">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Iterate over all components in a form and get string values for translation.</p>
@@ -9704,11 +9759,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber522">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber546">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getValue} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber522">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {getValue} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber546">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Get the value for a component key, in the given submission.</p>
@@ -9784,11 +9839,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber425">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber434">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {guid} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber425">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {guid} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber434">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -9839,11 +9894,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber450">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber474">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {hasCondition} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber450">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {hasCondition} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber474">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Returns if this component has a conditional statement.</p>
@@ -9909,15 +9964,15 @@
     
     
     
-    <span class="code" data-ice="name">interpolate</span><span class="code" data-ice="signature">(string: <span>*</span>, data: <span>*</span>): <span>XML</span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span>*</span> | <span>void</span></span>
+    <span class="code" data-ice="name">interpolate</span><span class="code" data-ice="signature">(rawTemplate: <span>*</span>, data: <span>*</span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span>*</span> | <span>void</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber381">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber391">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {interpolate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber381">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {interpolate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber391">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Interpolate a string and add data replacements.</p>
@@ -9934,7 +9989,7 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">string</td>
+      <td data-ice="name" class="code" data-depth="0">rawTemplate</td>
       <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -9955,7 +10010,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>XML</span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span>*</span> | <span>void</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span> | <span>*</span> | <span>void</span></td>
           
         </tr>
       </tbody>
@@ -10065,11 +10120,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber174">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber175">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isMongoId} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber174">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isMongoId} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber175">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Check to see if an ID is a mongoID.</p>
@@ -10137,11 +10192,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber487">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber496">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isValidDate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber487">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {isValidDate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber496">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -10208,11 +10263,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber930">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber937">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {iterateKey} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber930">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {iterateKey} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber937">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Iterate the given key to make it unique.</p>
@@ -10282,11 +10337,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber552">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber558">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {loadZones} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber552">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {loadZones} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber558">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Externally load the timezone data.</p>
@@ -10354,11 +10409,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber123">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber131">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {matchComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber123">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {matchComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber131">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Matches if a component matches the query.</p>
@@ -10432,11 +10487,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber775">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber781">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {matchInputMask} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber775">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {matchInputMask} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber781">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -10509,11 +10564,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber584">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber590">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {momentDate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber584">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {momentDate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber590">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Get the moment date object for translating dates with timezones.</p>
@@ -10593,11 +10648,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber1020">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber1027">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {observeOverload} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber1020">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {observeOverload} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber1027">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -10671,11 +10726,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber511">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber520">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {offsetDate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber511">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {offsetDate} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber520">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Get an offset date provided a date object and timezone object.</p>
@@ -10749,11 +10804,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber467">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber491">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {parseFloatExt} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber467">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {parseFloatExt} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber491">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Extension of standard #parseFloat(value) function, that also clears input string.</p>
@@ -10823,11 +10878,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber321">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber345">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {removeComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber321">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {removeComponent} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber345">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Remove a component by path.</p>
@@ -10960,11 +11015,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber169">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/formUtils.js.html#lineNumber177">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {searchComponents} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber169">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {searchComponents} from &apos;<span><a href="file/src/utils/formUtils.js.html#lineNumber177">formiojs/src/utils/formUtils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Finds a component provided a query of properties of that component.</p>
@@ -11038,11 +11093,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber324">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber334">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {setActionProperty} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber324">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {setActionProperty} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber334">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -11139,11 +11194,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber540">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber549">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {shouldLoadZones} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber540">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {shouldLoadZones} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber549">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Returns if we should load the zones.</p>
@@ -11211,11 +11266,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber977">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber984">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {unfold} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber977">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {unfold} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber984">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Retrun provided argument.
@@ -11284,11 +11339,11 @@ If argument is a function, returns the result of a function call.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber947">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber954">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {uniqueKey} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber947">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {uniqueKey} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber954">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Determines a unique key within a map provided the base key.</p>
@@ -11362,11 +11417,11 @@ If argument is a function, returns the result of a function call.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber403">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber413">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {uniqueName} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber403">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {uniqueName} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber413">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Make a filename guaranteed to be unique.</p>
@@ -11517,11 +11572,11 @@ If argument is a function, returns the result of a function call.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber1003">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber1010">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {withSwitch} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber1003">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {withSwitch} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber1010">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -11594,11 +11649,11 @@ If argument is a function, returns the result of a function call.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber530">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/utils/utils.js.html#lineNumber539">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {zonesLoaded} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber530">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {zonesLoaded} from &apos;<span><a href="file/src/utils/utils.js.html#lineNumber539">formiojs/src/utils/utils.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Returns if the zones are loaded.</p>
