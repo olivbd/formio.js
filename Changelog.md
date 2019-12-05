@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.23.2
+### Fixed
+ - Fixed component ng-hide issues (olivbd)
+ 
+## 3.23.1
+### Added
+ - Adds tabs support (olivbd)
+
 ## 3.23.0
 ### Fixed
  - FOR-2388: Fixed problems where the password would not have protected set by default.

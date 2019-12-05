@@ -1,6 +1,6 @@
 {
   "name": "formiojs",
-  "version": "3.23.1",
+  "version": "3.23.2",
   "description": "Common js library for client side interaction with <form.io>",
   "main": "index.js",
   "files": [
@@ -75,7 +75,7 @@
     "i18next": "^17.0.6",
     "json-logic-js": "^1.2.2",
     "jstimezonedetect": "^1.0.6",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
     "native-promise-only": "^0.8.1",
