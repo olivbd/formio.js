@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/formio/formio.js"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/olivbd/formio.js"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -240,6 +240,7 @@ export function isLayoutComponent(component) {
   return Boolean(
     (component.columns &amp;&amp; Array.isArray(component.columns)) ||
     (component.rows &amp;&amp; Array.isArray(component.rows)) ||
+    (component.tabs &amp;&amp; Array.isArray(component.tabs)) ||
     (component.components &amp;&amp; Array.isArray(component.components))
   );
 }
@@ -267,6 +268,7 @@ export function eachComponent(components, fn, includeAll, path, parent) {
     }
     const hasColumns = component.columns &amp;&amp; Array.isArray(component.columns);
     const hasRows = component.rows &amp;&amp; Array.isArray(component.rows);
+    const hasTabs = component.tabs &amp;&amp; Array.isArray(component.tabs);
     const hasComps = component.components &amp;&amp; Array.isArray(component.components);
     let noRecurse = false;
     const newPath = component.key ? (path ? (`${path}.${component.key}`) : component.key) : &apos;&apos;;
@@ -279,9 +281,10 @@ export function eachComponent(components, fn, includeAll, path, parent) {
       delete component.parent.componentMap;
       delete component.parent.columns;
       delete component.parent.rows;
+      delete component.parent.tabs;
     }
 
-    if (includeAll || component.tree || (!hasColumns &amp;&amp; !hasRows &amp;&amp; !hasComps)) {
+    if (includeAll || component.tree || (!hasColumns &amp;&amp; !hasRows &amp;&amp; !hasTabs &amp;&amp; !hasComps)) {
       noRecurse = fn(component, newPath);
     }
 
@@ -309,6 +312,11 @@ export function eachComponent(components, fn, includeAll, path, parent) {
       if (hasColumns) {
         component.columns.forEach((column) =&gt;
           eachComponent(column.components, fn, includeAll, subPath(), parent ? component : null));
+      }
+
+      else if (hasTabs) {
+        component.tabs.forEach((tab) =&gt;
+          eachComponent(tab.components, fn, includeAll, subPath(), parent ? component : null));
       }
 
       else if (hasRows) {
@@ -499,6 +507,22 @@ export function findComponent(components, key, path, fn) {
             found = true;
           }
         });
+      });
+    }
+
+    if (component.hasOwnProperty(&apos;tabs&apos;) &amp;&amp; Array.isArray(component.tabs)) {
+      newPath.push(&apos;tabs&apos;);
+      component.tabs.forEach(function(tab, index) {
+        var colPath = newPath.slice();
+        colPath.push(index);
+        tab.type = &apos;tab&apos;;
+        if (checkComponent(tab, key, colPath)) {
+          found = true;
+          fn(tab, colPath);
+        }
+        else if (findComponent(tab.components, key, colPath.concat([&apos;components&apos;]), fn)) {
+          found = true;
+        }
       });
     }
 
